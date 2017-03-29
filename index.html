@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAngularApp">
+<head>
+    <title>Portfolio</title>
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- angular cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Condensed" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- css link -->
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body ng-controller="MainController">
+    <header class="header">
+        <div class="profile-pic-header">
+            <img class="profile-picture img-thumbnail" ng-src="{{profile.img}}" />
+            <p class="profile-name">{{profile.name}}</p>
+            <p class="profile-name-bottom">(Veh)</p>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="img-holder">
+            <div class="container">
+                <div class="row">
+                    <div ng-repeat="picture in images" class="col-md-6 col-lg-6">
+                        <div class="thumbnail">
+                            <img class="img-holder-picture" ng-src="{{picture.img}}">
+                            <h1 class="myName">{{picture.description}}</h1>
+                            <a href="{{picture.destination}}" target="_blank">
+                                <p class="locationPath">&#xf041; {{picture.location}}</p>
+                            </a>
+                            <p class="DateOfPic">posted on: {{picture.date | date}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-mo-to">
+        <div class="footer-holder text-center">
+            <h2 class="cpr">Social Media and others</h2>
+            <div class="social-holder">
+                <a href="https://www.facebook.com/verrell.soriano" target="_blank">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <p>Facebook</p>
+                </a>
+            </div>
+            <div class="social-holder">
+                <a href="https://www.linkedin.com/in/verrell-victor-soriano-097131133/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+            <div class="social-holder">
+                <a href="https://plus.google.com/u/0/110972764558785356886" target="_blank">
+                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    <p>Google Mail</p>
+                </a>
+            </div>
+            <div class="social-holder">
+                <a href="" target="_blank">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <p>Contact #</p>
+                </a>
+            </div>
+            <p class="cpr">&copy; Copyright Verrell Victor G. Soriano Inc.</p>
+        </div>
+    </footer>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/controller.js" type="text/javascript"></script>
+</body>
+</html>
+
+<!-- <img ng-src="{{images[0].img}}" >
+<img ng-src="{{images[1].img}}" >
+<img ng-src="{{images[2].img}}" >
+<img ng-src="{{images[3].img}}" >
+<img ng-src="{{images[4].img}}" >
+<h1>{{images[0].name}}</h1>
+<h1>{{images[1].name}}</h1>
+<h1>{{images[2].name}}</h1>
+<h1>{{images[3].name}}</h1>
+<h1>{{images[4].name}}</h1> -->

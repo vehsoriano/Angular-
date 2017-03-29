@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  text-decoration: none; }
+
+.header {
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative; }
+  .header .profile-name,
+  .header .profile-name-bottom {
+    position: absolute;
+    left: 300px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 200;
+    font-size: 34px; }
+  .header .profile-name {
+    bottom: 90px; }
+  .header .profile-name-bottom {
+    bottom: 50px; }
+  .header .profile-picture {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    height: auto; }
+
+.section-1 {
+  padding-top: 50px; }
+  .section-1 .thumbnail {
+    border: 0px;
+    position: relative;
+    padding: 50px;
+    border-radius: 0;
+    margin-bottom: 50px; }
+    .section-1 .thumbnail .img-holder-picture {
+      height: 500px;
+      width: 400px; }
+    .section-1 .thumbnail .locationPath {
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-size: 19px;
+      background-color: #fff; }
+    .section-1 .thumbnail .myName,
+    .section-1 .thumbnail .DateOfPic {
+      background-color: #fff; }
+    .section-1 .thumbnail .myName {
+      color: #444;
+      font-size: 20px;
+      font-weight: 600; }
+
+.footer-mo-to {
+  background-color: #fff;
+  position: relative; }
+  .footer-mo-to .footer-holder {
+    background-color: #fff;
+    padding-top: 50px; }
+    .footer-mo-to .footer-holder .cpr {
+      background-color: #fff;
+      padding: 15px;
+      margin: 0;
+      font-size: 24px;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      color: black; }
+  .footer-mo-to .social-holder {
+    display: inline-block;
+    padding: 30px;
+    transition: all .2s ease-in-out;
+    cursor: pointer; }
+    .footer-mo-to .social-holder:hover a {
+      opacity: .78; }
+    .footer-mo-to .social-holder a {
+      text-decoration: none; }
+    .footer-mo-to .social-holder .fa {
+      font-size: 100px; }
